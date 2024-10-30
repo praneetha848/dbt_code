@@ -4,8 +4,8 @@
 with customers as (
   select
   id as customer_id,
-   first_name,
-   last_name,
+   first_name as f_name,
+   last_name as l_name,
        from {{source('datafeed_shared_schema','raw_customerdata')}}
 
 ),
