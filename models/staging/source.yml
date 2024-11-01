@@ -6,4 +6,7 @@ sources:
       tables:
         - name: raw_customerdata
         - name: raw_orders
+        - name: RAW_PRODUCT
+        - name: raw_emp
+
      
