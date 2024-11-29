@@ -8,6 +8,6 @@ unique_key='id',
 )
 }}
 
-select * from {{ source('datafeed_shared_schema', 'raw_orders') }} 
+select * from {{ source('datafeed_shared_schema', 'raw_order') }} 
 
 {% endsnapshot %}

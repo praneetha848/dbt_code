@@ -10,14 +10,13 @@ exposures:
       - ref('compare_table_rowcount')
       - ref('customer_snap1')
       - ref('customer_snap_final_dataset')
-      - ref('emp_seed')
       - ref('employees_salary') 
       - ref('final_cust_order_dataset')
       - ref('order_append')
       - ref('order_merge')
       - ref('order_macro_data')
-      - source('datafeed_shared_schema','raw_orders')
-      - source('datafeed_shared_schema','raw_customerdata')
+      - source('datafeed_shared_schema','raw_order')
+      - source('datafeed_shared_schema','raw_customer')
       - source('datafeed_shared_schema','raw_emp')
     owner:
       name: saisri
