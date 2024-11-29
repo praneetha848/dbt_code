@@ -6,5 +6,5 @@ WITH tb1 as(
     c_name as customer_name, 
     c_nationkey as nation_key    
 
-    from {{source('datafeed_shared_schema','RAW_CUSTOMER')}})
+    from {{source('datafeed_shared_schema','raw_customer')}})
 select * from tb1
