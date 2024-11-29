@@ -2,8 +2,9 @@
 
 WITH tb1 as(
     select
-    id ,
-    first_name AS FIRSTNAME,
-    last_name AS LASTNAME
-    from {{source('datafeed_shared_schema','raw_customer')}})
+    c_custkey as customer_key, 
+    c_name as customer_name, 
+    c_nationkey as nation_key    
+
+    from {{source('datafeed_shared_schema','RAW_CUSTOMER')}})
 select * from tb1
