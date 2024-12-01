@@ -1,3 +1,3 @@
 {{ default__compare_row_counts
-('DBT_SOURCE.SOURCE_SCHEMA.STG_PAYMENTS','DBT_SOURCE.SOURCE_SCHEMA.RAW_ORDERS',
-'DBT_SOURCE.SOURCE_SCHEMA.RAW_CUSTOMERDATA')}}
+('di_sales.customer.STG_PAYMENTS','di_sales.customer.raw_order',
+'di_sales.customer.raw_customer')}}

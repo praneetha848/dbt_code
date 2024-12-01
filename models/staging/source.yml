@@ -1,11 +1,11 @@
 version: 2
 sources:
     - name: datafeed_shared_schema
-      database: dbt_source
-      schema: source_schema
+      database: di_sales
+      schema: customer
       tables:
-        - name: raw_customerdata
-        - name: raw_orders
+        - name: raw_customer
+        - name: raw_order
           columns:
             - name: id
               tests:
@@ -18,5 +18,7 @@ sources:
         - name: RAW_PRODUCT
         - name: raw_emp
         - name: customers
+        - name: raw_lineitem
+        - name : raw_nation
 
      
