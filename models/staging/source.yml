@@ -18,7 +18,52 @@ sources:
         - name: RAW_PRODUCT
         - name: raw_emp
         - name: customers
+<<<<<<< HEAD
+        - name: RAW_LINEITEM
+          columns:
+            - name: l_orderkey
+              tests:
+                - not_null
+            - name: l_quantity
+              tests:
+                - not_null
+            - name: l_linenumber
+              tests:
+                - not_null  
+        - name: RAW_NATION
+          columns:
+            - name: n_nationkey
+              tests:
+                - unique
+                - not_null
+            - name: n_name
+              tests:
+                - not_null
+        - name: RAW_ORDER
+          columns:
+            - name: o_orderkey
+              tests:
+               - unique
+               - not_null
+=======
         - name: raw_lineitem
         - name : raw_nation
+>>>>>>> 9898f21a2963e414081098fe3748db017b15b43e
 
-     
+        - name: RAW_CUSTOMER 
+          columns:
+           - name: c_custkey
+             tests:
+              - unique
+              - not_null
+           - name: c_name
+             tests:
+               - not_null
+        - name: RAW_SUPPLIER
+        - name: RAW_PARTSUPP
+        - name: RAW_PART
+        - name : RAW_REGION
+        - name : RAW_CUSTOMER_NATION
+        - name: snap_ordersdetails
+ 
+    
