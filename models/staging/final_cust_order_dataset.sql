@@ -6,7 +6,7 @@ with customers as (
   id as customer_id,
    first_name as f_name,
    last_name as l_name,
-       from {{source('datafeed_shared_schema','raw_customerdata')}}
+       from {{source('datafeed_shared_schema','raw_customer')}}
 
 ),
 
@@ -16,7 +16,7 @@ orders as (
     user_id as customer_id,
     order_date,
     status
-from {{source('datafeed_shared_schema','raw_orders')}}
+from {{source('datafeed_shared_schema','raw_order')}}
 
 ),
 

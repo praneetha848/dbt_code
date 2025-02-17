@@ -20,5 +20,10 @@ WITH tb1 as(
         when o_orderstatus = 'P' then 'Processing'
         end as order_status
 
+<<<<<<< HEAD
     from {{source('datafeed_shared_schema','RAW_ORDER')}})
 select * from tb1
+=======
+    from {{source('datafeed_shared_schema','raw_order')}})
+select * from tb1
+>>>>>>> 9898f21a2963e414081098fe3748db017b15b43e
