@@ -5,6 +5,7 @@ sources:
       schema: customer
       tables:
         - name: raw_customer
+        - name: raw_emp
         - name: raw_order
           columns:
             - name: id
@@ -15,10 +16,11 @@ sources:
               tests:
                  - accepted_values:
                       values: ['placed', 'shipped', 'completed', 'returned', 'return_pending','replaced','reordered']
-        - name: RAW_PRODUCT
-        - name: raw_emp
-        - name: customers
-        - name: raw_lineitem
-        - name : raw_nation
+        - name: RAW_ORDER
+          columns:
+            - name: o_orderkey
+              tests:
+               - unique
+               - not_null
 
-     
+       
