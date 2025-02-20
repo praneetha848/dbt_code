@@ -1,7 +1,7 @@
 select
     FIRSTNAME,
     sum(salary) as total_amount
-from {{ ref('raw_emp' )}} 
+from {{ ref('emp' )}} 
 group by FIRSTNAME
-having total_amount < 0
+having total_amount < 1
 
