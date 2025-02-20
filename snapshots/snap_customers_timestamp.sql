@@ -9,6 +9,6 @@
     )
 }}
 select * 
-from {{source('datafeed_shared_schema','raw_customer')}}
+from {{source('datafeed_shared_schema','CUSTOMERS')}}
 
 {% endsnapshot %}
