@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table',transient=false) }}
 
 WITH tb1 as(
     select id,

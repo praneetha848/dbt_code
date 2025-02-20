@@ -8,4 +8,13 @@ sources:
         - name: CUSTOMERS
         - name: raw_emp
         - name: raw_order
+          columns:
+            - name : id
+              tests:
+                - unique
+                - not_null
+            - name : status
+              tests:    
+                - accepted_values:
+                      values: ['placed', 'shipped', 'completed', 'returned', 'return_pending', 'replce','started'] 
           
