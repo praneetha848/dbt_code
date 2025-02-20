@@ -5,5 +5,5 @@ WITH tb1 as(
     order_date,
     user_id,
     status
-    from {{source('datafeed_shared_schema','raw_order')}}
+    from {{source('datafeed_shared_schema','raw_order')}})
 select * from tb1
