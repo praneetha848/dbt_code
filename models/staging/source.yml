@@ -17,4 +17,13 @@ sources:
               tests:    
                 - accepted_values:
                       values: ['placed', 'shipped', 'completed', 'returned', 'return_pending', 'replce','started'] 
-          
+
+    - name: datafeed_shared_schema_sales
+      database: sales
+      schema: dev
+      tables: 
+        - name: raw_customer
+        - name: raw_lineitem
+        - name: raw_order
+        - name: raw_nation
+
