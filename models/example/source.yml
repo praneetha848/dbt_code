@@ -6,6 +6,7 @@ sources:
       tables:
         - name: raw_customer
         - name: customers
+        - name: raw_payments
         - name: raw_orders
           columns:
             - name: id   
@@ -15,7 +16,7 @@ sources:
             - name: status  
               tests:
                 - accepted_values:
-                      values: ['placed', 'shipped', 'completed', 'returned', 'return_pending']
+                      values: ['placed', 'shipped', 'completed', 'returned', 'return_pending','display']
  
 
         
