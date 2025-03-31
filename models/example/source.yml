@@ -1,0 +1,22 @@
+version: 2
+sources:
+    - name: datafeed_shared_schema
+      database: DEMO_PROJECT
+      schema: RAW_SHEMA
+      tables:
+        - name: raw_customer
+        - name: customers
+        - name: raw_payments
+        - name: raw_orders
+          columns:
+            - name: id   
+              tests:
+                - unique
+                - not_null
+            - name: status  
+              tests:
+                - accepted_values:
+                      values: ['placed', 'shipped', 'completed', 'returned', 'return_pending','display']
+ 
+
+        
